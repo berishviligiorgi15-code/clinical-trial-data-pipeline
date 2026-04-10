@@ -31,6 +31,3 @@ flowchart LR
     G --> I
     H --> I
     I --> J[Airflow DAG Orchestration]
-staging load
-core transformation
-analytics run
