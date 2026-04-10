@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+data/clin_trials.csv
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+venv/
+
+.airflow/
+logs/
+airflow.db
+airflow-webserver.pid
+
+*.log
