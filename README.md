@@ -31,3 +31,27 @@ flowchart LR
     G --> I
     H --> I
     I --> J[Airflow DAG Orchestration]
+
+
+
+Pipeline Layers
+1. Raw ingestion layer
+Input dataset: data/clin_trials.csv
+Raw load into stg_clinical_trials
+2. Curated transformation layer
+Clean placeholder values such as Unknown, NA, and empty strings
+Standardize categorical values
+Generate a business key for deduplication
+Normalize multi-value fields into relational child tables
+3. Analytics layer
+SQL queries for trial counts
+Common conditions analysis
+Intervention completion behavior
+Organization distribution
+Study timeline analysis
+4. Orchestration layer
+Airflow DAG executes:
+database initialization
+staging load
+core transformation
+analytics run
