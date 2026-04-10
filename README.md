@@ -13,16 +13,6 @@ data engineering skills across ingestion, data modeling, validation,
 transformation, SQL analytics, Docker-based local execution, testing, and
 orchestration.
 
-## Dataset
-
-The original `clin_trials.csv` file is not included in this repository because it exceeds GitHub’s file size limits.
-
-Place the dataset manually in:
-
-`data/clin_trials.csv`
-
-You can also use a smaller sample file for testing.
-
 ## Architecture
 
 High-level flow:
@@ -44,7 +34,7 @@ flowchart LR
     G --> I
     H --> I
     I --> J[Airflow DAG Orchestration]
-Pipeline layers
+## Pipeline layers
 Raw ingestion layer
 Input dataset: data/clin_trials.csv
 Raw load into stg_clinical_trials
