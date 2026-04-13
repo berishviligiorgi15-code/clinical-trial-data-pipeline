@@ -56,6 +56,7 @@ analytics run
 
 Project Structure
 
+```
 clinical-trial-pipeline/
 ├── dags/
 │   └── clinical_trials_pipeline.py
@@ -83,3 +84,4 @@ clinical-trial-pipeline/
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
+```
