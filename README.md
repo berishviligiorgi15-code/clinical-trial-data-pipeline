@@ -53,3 +53,33 @@ database initialization
 staging load
 core transformation
 analytics run
+
+Project Structure
+
+clinical-trial-pipeline/
+├── dags/
+│   └── clinical_trials_pipeline.py
+├── data/
+│   └── clin_trials.csv
+├── src/
+│   ├── analytics/
+│   │   ├── analytics.sql
+│   │   └── run_analytics.py
+│   ├── db/
+│   │   ├── connection.py
+│   │   ├── init_db.py
+│   │   └── schema.sql
+│   ├── ingestion/
+│   │   └── load_csv_to_staging.py
+│   ├── transform/
+│   │   └── transform_trials.py
+│   └── utils/
+│       └── helpers.py
+├── tests/
+│   └── test_helpers.py
+├── .env.example
+├── .gitignore
+├── docker-compose.yml
+├── Dockerfile
+├── requirements.txt
+└── README.md
